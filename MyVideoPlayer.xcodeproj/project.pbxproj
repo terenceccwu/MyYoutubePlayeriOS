@@ -11,6 +11,9 @@
 		00BA4459281E6BBA0022CA2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA4458281E6BBA0022CA2D /* ContentView.swift */; };
 		00BA445B281E6BBC0022CA2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BA445A281E6BBC0022CA2D /* Assets.xcassets */; };
 		00BA445E281E6BBC0022CA2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BA445D281E6BBC0022CA2D /* Preview Assets.xcassets */; };
+		00BA4465281E81360022CA2D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA4464281E81360022CA2D /* ImagePicker.swift */; };
+		00BA4467281E8C6C0022CA2D /* YTWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA4466281E8C6C0022CA2D /* YTWrapper.swift */; };
+		11FCEC690F3F5F7CD70CC2C2 /* Pods_MyVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C875A9629209DED2901D759 /* Pods_MyVideoPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		00BA4458281E6BBA0022CA2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00BA445A281E6BBC0022CA2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00BA445D281E6BBC0022CA2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00BA4464281E81360022CA2D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		00BA4466281E8C6C0022CA2D /* YTWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTWrapper.swift; sourceTree = "<group>"; };
+		1C24DEE8347E558D40B35980 /* Pods-MyVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyVideoPlayer.release.xcconfig"; path = "Target Support Files/Pods-MyVideoPlayer/Pods-MyVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		7209330826CA1C7BB9DF069F /* Pods-MyVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyVideoPlayer.debug.xcconfig"; path = "Target Support Files/Pods-MyVideoPlayer/Pods-MyVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		7C875A9629209DED2901D759 /* Pods_MyVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FCEC690F3F5F7CD70CC2C2 /* Pods_MyVideoPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +46,8 @@
 			children = (
 				00BA4455281E6BBA0022CA2D /* MyVideoPlayer */,
 				00BA4454281E6BBA0022CA2D /* Products */,
+				9B51374994FEE5F79FB59D37 /* Pods */,
+				A8D2A0578D355B07E8C51667 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +64,8 @@
 			children = (
 				00BA4456281E6BBA0022CA2D /* MyVideoPlayerApp.swift */,
 				00BA4458281E6BBA0022CA2D /* ContentView.swift */,
+				00BA4464281E81360022CA2D /* ImagePicker.swift */,
+				00BA4466281E8C6C0022CA2D /* YTWrapper.swift */,
 				00BA445A281E6BBC0022CA2D /* Assets.xcassets */,
 				00BA445C281E6BBC0022CA2D /* Preview Content */,
 			);
@@ -67,6 +80,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9B51374994FEE5F79FB59D37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7209330826CA1C7BB9DF069F /* Pods-MyVideoPlayer.debug.xcconfig */,
+				1C24DEE8347E558D40B35980 /* Pods-MyVideoPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8D2A0578D355B07E8C51667 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C875A9629209DED2901D759 /* Pods_MyVideoPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00BA4461281E6BBC0022CA2D /* Build configuration list for PBXNativeTarget "MyVideoPlayer" */;
 			buildPhases = (
+				0B4EE2F1C2755BCA01D37D3C /* [CP] Check Pods Manifest.lock */,
 				00BA444F281E6BB90022CA2D /* Sources */,
 				00BA4450281E6BB90022CA2D /* Frameworks */,
 				00BA4451281E6BB90022CA2D /* Resources */,
+				BB54D6D89EF46A84803C482F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +164,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B4EE2F1C2755BCA01D37D3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyVideoPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB54D6D89EF46A84803C482F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyVideoPlayer/Pods-MyVideoPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyVideoPlayer/Pods-MyVideoPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyVideoPlayer/Pods-MyVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00BA444F281E6BB90022CA2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BA4467281E8C6C0022CA2D /* YTWrapper.swift in Sources */,
+				00BA4465281E81360022CA2D /* ImagePicker.swift in Sources */,
 				00BA4459281E6BBA0022CA2D /* ContentView.swift in Sources */,
 				00BA4457281E6BBA0022CA2D /* MyVideoPlayerApp.swift in Sources */,
 			);
@@ -261,6 +337,7 @@
 		};
 		00BA4462281E6BBC0022CA2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7209330826CA1C7BB9DF069F /* Pods-MyVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +368,7 @@
 		};
 		00BA4463281E6BBC0022CA2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C24DEE8347E558D40B35980 /* Pods-MyVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
